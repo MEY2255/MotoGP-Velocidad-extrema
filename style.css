@@ -1,0 +1,151 @@
+/* Configuración General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000; /* Negro base */
+    color: #fff; /* Blanco para texto */
+    overflow-x: hidden;
+}
+
+/* Contenedor del Video Background */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#video-fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Capa para oscurecer el video y que se lea el texto */
+.capa-oscura {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Negro con transparencia */
+}
+
+/* Estilo de Contenidos */
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 3.5rem;
+    font-family: fantasy;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-bottom: 5px solid #ff0000; /* Rojo */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.titulo-principal span {
+    color: #ff0000; /* Rojo para resaltar */
+}
+
+.info-container {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    background: rgba(255, 255, 255, 0.1); /* Blanco muy transparente */
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    border-left: 8px solid #ff0000;
+    border-radius: 5px;
+}
+
+.info-container ul {
+    list-style: none;
+    text-align: left;
+}
+
+.info-container li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.info-container strong {
+    color: #ff0000;
+}
+
+/* Estilo de la Tabla de Imágenes */
+.menu-galeria {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px;
+    margin-top: 20px;
+}
+
+th {
+    padding-bottom: 10px;
+    color: #ff0000;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+td img {
+    width: 200px; /* Tamaño ajustado para que quepan mejor */
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border-radius: 10px;
+}
+
+td img:hover {
+    transform: scale(1.1);
+    border-color: #ff0000;
+    cursor: pointer;
+}
+
+/* --- Estilos del Footer --- */
+footer {
+    background-color: #0a0a1a; /* Un tono aún más oscuro que el body */
+    color: #cccccc;
+    padding: 40px 0 10px;
+    border-top: 3px solid #e94560; /* Línea de acento roja (color MotoGP) */
+    font-size: 0.9rem;
+    margin-top: 50px; /* Separa el footer del contenido principal */
+}
+
+.footer-container {
+    display: flex;
+    
+    flex-wrap: wrap; /* Importante para la responsividad en móviles */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Apila las secciones verticalmente en móviles */
+        text-align: center;
+    }
+    
+    
+}
+

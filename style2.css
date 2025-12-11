@@ -1,0 +1,86 @@
+/* 
+ * 1. Reseteo Básico y Fondo
+ * Asegura que no haya márgenes por defecto y da un fondo oscuro 
+ * para contrastar con la temática de MotoGP.
+ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y legible */
+    background-color: #1a1a2e; /* Color oscuro (azul noche) */
+    color: #ffffff; /* Texto blanco por defecto */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente todo el contenido del body */
+    justify-content: center; /* Centra verticalmente si hay suficiente espacio */
+    min-height: 100vh; /* Ocupa al menos el 100% del alto de la pantalla */
+    text-align: center; /* Centra el texto */
+}
+
+/* 
+ * 2. Estilos para el Título (H1)
+ * Tipografía impactante para "CALENDARIO".
+ */
+h1 {
+    font-size: 3rem; /* Tamaño de letra grande */
+    color: #e94560; /* Un rojo vibrante típico de carreras */
+    border-bottom: 3px solid #e94560; /* Línea decorativa debajo del título */
+    padding-bottom: 10px;
+    margin-bottom: 25px; /* Espacio debajo del título */
+    text-transform: uppercase; /* Todo en mayúsculas */
+    letter-spacing: 3px; /* Espacio entre letras */
+}
+
+/* 
+ * 3. Estilos para la Imagen
+ * Responsividad y un ligero borde redondeado.
+ */
+img {
+    max-width: 100%; /* La imagen nunca será más ancha que su contenedor (la pantalla) */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    width: 700px; /* Tamaño fijo deseado, pero flexible */
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Sombra suave para darle profundidad */
+    transition: transform 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Efecto al pasar el ratón por encima de la imagen */
+img:hover {
+    transform: scale(1.05); /* Agranda ligeramente la imagen al interactuar */
+}
+
+/* Contenedor de la imagen (el div que añadimos) */
+div {
+    margin-top: 20px;
+}
+
+
+
+/* --- Estilos del Footer --- */
+footer {
+    background-color: #0a0a1a; /* Un tono aún más oscuro que el body */
+    color: #cccccc;
+    padding: 40px 0 10px;
+    border-top: 3px solid #e94560; /* Línea de acento roja (color MotoGP) */
+    font-size: 0.9rem;
+    margin-top: 50px; /* Separa el footer del contenido principal */
+}
+
+.footer-container {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap; /* Importante para la responsividad en móviles */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Apila las secciones verticalmente en móviles */
+        text-align: center;
+    }
+    
+    
+}

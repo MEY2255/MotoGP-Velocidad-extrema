@@ -1,0 +1,258 @@
+/* Estilos Globales y Fondo Oscuro */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f1a; /* Fondo muy oscuro para un look profesional */
+    color: #e0e0e0; /* Texto gris claro para buena legibilidad */
+    line-height: 1.6; /* Espaciado entre líneas para mejor lectura */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto; /* Centra el contenido en pantallas grandes */
+    padding: 20px;
+    background-color: #1a1a2e; /* Contenedor interior con un tono menos oscuro */
+    border-radius: 8px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Título */
+h1 {
+    color: #ad3802; /* Un azul cian vibrante para el título */
+    text-align: center;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+/* Párrafos de Texto */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: justify; /* Alineación justificada para una apariencia de revista */
+    padding: 0 10px;
+}
+
+/* Galería de Imágenes (Flexbox) */
+.image-gallery {
+    display: flex;
+    justify-content: space-around; /* Distribuye las imágenes equitativamente */
+    flex-wrap: wrap; /* Permite que las imágenes salten de línea en móviles */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 30px;
+}
+
+/* Estilos de las Imágenes */
+.image-gallery img {
+    width: 100%;
+    max-width: 300px; /* Tamaño máximo para cada imagen individual */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+.image-gallery img:hover {
+    transform: translateY(-5px) scale(1.02); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Galería de Imágenes (Flexbox) 2 */
+.image-gallery2 {
+    display: flex;
+    justify-content: space-around; /* Distribuye las imágenes equitativamente */
+    flex-wrap: wrap; /* Permite que las imágenes salten de línea en móviles */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 30px;
+}
+
+/* Estilos de las Imágenes */
+.image-gallery2 img {
+    width: 100%;
+    max-width: 400px; /* Tamaño máximo para cada imagen individual */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+.image-gallery2 img:hover {
+    transform: translateY(-5px) scale(1.02); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Galería de Imágenes (Flexbox) 3 */
+.image-gallery3 {
+    display: flex;
+    justify-content: space-around; /* Distribuye las imágenes equitativamente */
+    flex-wrap: wrap; /* Permite que las imágenes salten de línea en móviles */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 30px;
+}
+
+/* Estilos de las Imágenes */
+.image-gallery3 img {
+    width: 100%;
+    max-width: 400px; /* Tamaño máximo para cada imagen individual */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+.image-gallery3 img:hover {
+    transform: translateY(-5px) scale(1.02); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* Media Query para Móviles: Asegura que en pantallas pequeñas las imágenes se apilen */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+    .image-gallery {
+        flex-direction: column; /* Apila las imágenes verticalmente en móviles */
+        align-items: center;
+    }
+    .image-gallery img {
+        max-width: 100%;
+    }
+}
+
+
+/* --- Estilos del Footer --- */
+footer {
+    background-color: #0a0a1a; /* Un tono aún más oscuro que el body */
+    color: #cccccc;
+    padding: 40px 0 10px;
+    border-top: 3px solid #e94560; /* Línea de acento roja (color MotoGP) */
+    font-size: 0.9rem;
+    margin-top: 50px; /* Separa el footer del contenido principal */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* Distribuye las secciones uniformemente */
+    flex-wrap: wrap; /* Importante para la responsividad en móviles */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px; /* Asegura que no se hagan demasiado estrechas */
+    margin: 20px;
+}
+
+.footer-section h3 {
+    color: #00bcd4; /* Color de acento cian para los títulos */
+    margin-bottom: 15px;
+    border-bottom: 1px solid #00bcd4;
+    padding-bottom: 5px;
+}
+
+.footer-section p {
+    color: #aaaaaa;
+    line-height: 1.4;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #e94560; /* Color rojo al pasar el ratón */
+    text-decoration: underline;
+}
+
+/* Iconos de Redes Sociales (Estilos básicos para los textos FB, TW, IG) */
+.icon-link {
+    display: inline-block;
+    margin-right: 10px;
+    color: #00bcd4;
+    border: 1px solid #00bcd4;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    background-color: #e94560;
+    border-color: #e94560;
+    color: white;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #2e2e4e; /* Separador sutil */
+    color: #888888;
+    font-size: 0.8rem;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Apila las secciones verticalmente en móviles */
+        text-align: center;
+    }
+    .footer-section {
+        margin: 10px 0;
+    }
+    .footer-section ul li a {
+        display: inline; /* Enlaces en línea en móviles para ahorrar espacio */
+        margin: 0 5px;
+    }
+    .footer-section h3 {
+        border-bottom: none;
+    }
+}
+
+
+/* --- Estilos del Footer --- */
+footer {
+    background-color: #0a0a1a; /* Un tono aún más oscuro que el body */
+    color: #cccccc;
+    padding: 40px 0 10px;
+    border-top: 3px solid #e94560; /* Línea de acento roja (color MotoGP) */
+    font-size: 0.9rem;
+    margin-top: 50px; /* Separa el footer del contenido principal */
+}
+
+.footer-container {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap; /* Importante para la responsividad en móviles */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Apila las secciones verticalmente en móviles */
+        text-align: center;
+    }
+    
+    
+}
